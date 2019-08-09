@@ -1,0 +1,194 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+.header{
+    max-width: 500px;
+    margin: 50px auto;
+    justify-content: center;
+    background-color: white;
+    font-family:sans-serif;
+    letter-spacing: 3px;
+    font-style: oblique;
+    text-align: center;
+    padding: 2vw;
+}
+
+.nav a {
+  color:black;
+  background-color: white;
+  display:flex;
+  justify-content:center;
+  flex-direction:row;
+  padding: 15px 115px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.nav a:hover {
+ color: grey;
+}
+
+.flash-cards {
+    max-width: 1200px;
+    background-color: white;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.images{
+    display:flex;
+    flex-direction:column;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:1vw;
+    padding-bottom:3vw;
+}
+
+.main-content{
+  text-align: center;
+  display:flex;
+  flex-direction:column;
+  padding-left:5vw;
+  padding-right:5vw;
+  padding-top:1vw;
+  padding-bottom:3vw;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 18px;
+}
+
+.browse-images{
+  display:flex;
+  flex-direction:row;
+  padding-left:1vw;
+  padding-right:1vw;
+  padding-top:1vw;
+  padding-bottom:3vw;
+}
+
+.card{
+    padding: 25px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-1{
+    background-color: lightpink;
+}
+
+.card-2{
+    background-color: lightblue;
+}
+
+.card-3{
+    background-color: lightgreen;
+}
+
+#subtext{
+  font-size: 18px;
+}
+
+#subtext2{
+  font-size: 18px;
+}
+
+#subtext3{
+  font-size: 18px;
+  color: red;
+}
+
+#addtobag{
+  background-color: white;
+  padding: 14px 28px;
+  font-size: 20px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#sizeguide{
+  background-color: lightgrey;
+  border-width:thick;
+  padding: 14px 28px;
+  font-size: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#proceed{
+  background-color: white;
+  border-width: thick;
+  border-color: grey;
+  padding: 14px 28px;
+  font-size: 20px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#back{
+  background-color: grey;
+  padding: 14px 28px;
+  font-size: 20px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.fullname{
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+    color: grey;
+}
+
+.email{
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+    color: grey;
+}
+
+.deliveryaddress{
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+    color: grey;
+}
+
+@media only screen and (min-width: 769px){
+
+    .images{
+      display:flex;
+      justify-content: center;
+      flex-direction: row;
+    }
+
+    .main-content{
+      order: 2;
+      flex: 3;
+      padding-left: 2vw;
+      padding-right: 2vw;
+    }
+
+    .card{
+      margin: 1vw;
+    }
+
+    .flash-cards{
+      display:flex;
+      font-family: sans-serif;
+      color:black;
+      justify-content: center;
+      flex-direction: row;
+    }
+
+    }
