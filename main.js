@@ -1,22 +1,40 @@
-let randomNumber = Math.random()*100
+let count = 0;
+let randomNum = Math.floor(Math.random()*100)
 
-function test(){
-  let myNumber = document.getElementById("input").value
-  if(myNumber > randomNumber){
-    // [your number] greater than [random number]
-    console.log (`${myNumber} is greater than ${randomNumber}.`)
-  }else{
-    // [your number] less than [random number]
-    console.log (`${myNumber} is less than ${randomNumber}.`)
+function processGuess(){
+  let input = document.getElementById("guess").value
 
+  console.log(input)
+  let gap = Math.abs(input - randomNum);
+
+
+  if(gap>50){
+    document.getElementById('message').innerHTML = "FREEZING"
+  } else if (gap>20){
+    document.getElementById('message').innerHTML = "cold"
+  } else if (gap>10){
+    document.getElementById('message').innerHTML = "warm"
+  } else if (gap>5){
+    document.getElementById('message').innerHTML = "hot"
+  } else if (gap>0){
+    document.getElementById('message').innerHTML = "boiling"
+  } else if (gap==0){
+    document.getElementById('message').innerHTML = "SUCCESS!"
   }
+
+  count++
+  document.getElementById('countNum').innerHTML =
+  `<h3>''You have guessed ${count} times'</h3>`
+
 }
 
-var count = 0;
-      var button = document.getElementById("countButton");
-      var display = document.getElementById("displayCount");
+function resetGame(){
+  randomNum = Math.floor(Math.random()*100)
+  document.getElementById('guess').value = ''
 
-      button.onclick = function(){
-        count++;
-        display.innerHTML = count;
-      }
+  count = 0;
+
+  document.getElementById('countNum').innerHTML =
+  `<h3>''You have guessed ${count} times'</h3>`
+
+}

@@ -1,17 +1,13 @@
-.vl {
-  border-left: 3px solid #c1cfdb;
-  height: 500%;
-  position:absolute;
-  left: 100px;
-  margin-left: -3px;
-  top: 50px;
+body{
+  width:100%;
+  margin:0px;
 }
 
 h1{
   font-family: 'Amiri', serif;
   font-size: 20px;
   letter-spacing: 3px;
-  padding-top: 40px;
+  padding-top: 1vw;
   padding-left: 115px;
   color: #5b5b5c;
 }
@@ -22,6 +18,8 @@ h2{
   text-align: center;
   letter-spacing: 3px;
   color: #5b5b5c;
+  display:flex;
+  justify-content: center;
 }
 
 h3{
@@ -64,28 +62,56 @@ h3{
  color: #c1cfdb;
 }
 
-img {
-    margin-left: 530px;
-    width: 30%;
+.imagery{
+  padding-top: 2vw;
+  padding-bottom: 5vw;
+  display:inline-flex;
+  height:55%;
 }
 
-#mobile {
-  margin-left: 450px;
+
+#imagery1{
+  display:flex;
+  padding-left:8vw;
+  padding-right: 1vw;
+  width:22%;
 }
 
-#tablet {
-  margin-left: 500px;
+#imagery2{
+  width:27%;
+  padding-right: 1vw;
+}
+
+#imagery3{
+  width:27%;
+  padding-right: 1vw;
+}
+
+img.wireframes{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  width:30%;
+  padding-left: 35vw;
 }
 
 .label{
-margin-left: 570px;
-font-family: 'Amiri', serif;
-font-size: 20px;
-text-align: center;
-letter-spacing: 1px;
-color: #5b5b5c;
+  margin-left: 40vw;
+  font-family: 'Amiri', serif;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #5b5b5c;
+}
+input#guess {
+  margin-left:42vw;
 }
 
-#input {
-  margin-left: 600px;
+#message{
+  font-family: 'Amiri', serif;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #5b5b5c;
 }
